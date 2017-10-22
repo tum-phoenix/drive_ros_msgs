@@ -13,6 +13,8 @@ add_message_files(
     FILES
     RoadLane.msg
     Homography.msg
+    Obstacle.msg
+    ObstacleArray.msg
     )
 
 generate_messages(
