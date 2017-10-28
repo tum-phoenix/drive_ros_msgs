@@ -13,6 +13,8 @@ add_message_files(
     FILES
     RoadLane.msg
     Homography.msg
+    Obstacle.msg
+    ObstacleArray.msg
     mav_RAW_DATA.msg
     mav_cc16_NOTIFICATION.msg
     mav_cc16_HEARTBEAT.msg
