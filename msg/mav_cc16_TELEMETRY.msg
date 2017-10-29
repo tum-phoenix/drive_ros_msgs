@@ -1,11 +1,11 @@
 # Automatically Generated in 2017-06-12 22:33:47.452753
 # MESSAGE: TELEMETRY
 # Description:Telemetry
+Header header
+
 uint8 ID = 3
 uint8 sysid
 uint8 compid
-
-Header header
 
 float32 xacc
 float32 yacc

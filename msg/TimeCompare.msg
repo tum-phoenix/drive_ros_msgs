@@ -1,7 +1,6 @@
 # Debug Message
-
 Header header
 
-time ros_time
-time mav_time
+time time_1
+time time_2
 duration diff_time

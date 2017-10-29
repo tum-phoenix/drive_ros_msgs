@@ -15,6 +15,8 @@ add_message_files(
     Homography.msg
     Obstacle.msg
     ObstacleArray.msg
+    TimeCompare.msg
+
     mav_RAW_DATA.msg
     mav_cc16_NOTIFICATION.msg
     mav_cc16_HEARTBEAT.msg
@@ -42,7 +44,6 @@ add_message_files(
     mav_cc16_CONFIG_PARAM_SET_BOOL.msg
     mav_cc16_CONFIG_PARAM_SET_FLOAT.msg
     mav_cc16_COMMAND.msg
-    mav_cc16_TIMES.msg
     )
 
 generate_messages(
