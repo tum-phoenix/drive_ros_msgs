@@ -17,6 +17,8 @@ add_message_files(
     Obstacle.msg
     ObstacleArray.msg
     TimeCompare.msg
+    EncoderLinear.msg
+    VehicleEncoder.msg
 
     mav_RAW_DATA.msg
     mav_cc16_NOTIFICATION.msg
