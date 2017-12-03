@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
     FILES
     RoadLane.msg
+    RoadLine.msg
     Homography.msg
     Obstacle.msg
     ObstacleArray.msg
