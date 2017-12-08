@@ -1,7 +1,7 @@
 Header header
 
 # array of encoders
-EncoderLinear[] encoder
+EncoderLinear[4] encoder
 
 # only one motor encoder
 uint8 MOTOR=0
