@@ -19,6 +19,8 @@ add_message_files(
     TimeCompare.msg
     EncoderLinear.msg
     VehicleEncoder.msg
+    BoundingBox.msg
+    BoundingBoxArray.msg
 
     mav_RAW_DATA.msg
     mav_cc16_NOTIFICATION.msg
