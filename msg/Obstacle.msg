@@ -12,8 +12,8 @@ geometry_msgs/Polygon polygon
 # center point of the points
 geometry_msgs/Point32 centroid
 
-# orientation of the object (0 if unknown or no orientation)
-float32 yaw
+# orientation of the object
+geometry_msgs/Quaternion orientation
 
 # dimensions of obstacle in rotated pose (0 if unknown)
 float32 length

@@ -9,6 +9,10 @@ find_package(catkin REQUIRED COMPONENTS
     message_filters
 )
 
+include_directories(
+    "include"
+ )
+
 add_message_files(
     FILES
     RoadLane.msg
@@ -49,14 +53,23 @@ add_message_files(
     mav_cc16_CONFIG_PARAM_SET_BOOL.msg
     mav_cc16_CONFIG_PARAM_SET_FLOAT.msg
     mav_cc16_COMMAND.msg
-    )
+)
 
 generate_messages(
     DEPENDENCIES
     std_msgs
     geometry_msgs
-    )
+)
+
 
 catkin_package(
+    INCLUDE_DIRS include
     CATKIN_DEPENDS  sensor_msgs std_msgs message_runtime
+)
+
+# add header files to ros
+install(DIRECTORY include/${PROJECT_NAME}/
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+  FILES_MATCHING PATTERN "*.h"
+  PATTERN ".svn" EXCLUDE
 )
