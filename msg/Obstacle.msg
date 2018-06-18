@@ -6,14 +6,12 @@ uint8 TYPE_CAMERA = 1
 uint8 TYPE_LIDAR = 2
 uint8 obstacle_type
 
-# points belonging to the obstacle
+# points belonging to the obstacle (do we really need this?)
 geometry_msgs/Polygon polygon
 
-# center point of the points
-geometry_msgs/Point32 centroid
-
-# orientation of the object
-geometry_msgs/Quaternion orientation
+# center point
+geometry_msgs/PoseWithCovariance centroid_pose
+geometry_msgs/TwistWithCovariance centroid_twist
 
 # dimensions of obstacle in rotated pose (0 if unknown)
 float32 length

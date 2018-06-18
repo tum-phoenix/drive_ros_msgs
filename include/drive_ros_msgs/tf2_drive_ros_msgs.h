@@ -38,31 +38,31 @@ void doTransform(const drive_ros_msgs::Obstacle &obs_in, drive_ros_msgs::Obstacl
     obs_out.header = t_in.header;
 
     // setup transform
-    Eigen::Vector3d trans(t_in.transform.translation.x,
-                          t_in.transform.translation.y,
-                          t_in.transform.translation.z);
+    Eigen::Translation3f t(t_in.transform.translation.x,
+                           t_in.transform.translation.y,
+                           t_in.transform.translation.z);
 
-    Eigen::Quaternion<double> r(t_in.transform.rotation.w,
+    Eigen::Quaternion<float>  r(t_in.transform.rotation.w,
                                 t_in.transform.rotation.x,
                                 t_in.transform.rotation.y,
                                 t_in.transform.rotation.z);
-
-    Eigen::Transform<double, 3, Eigen::Affine> t(r);
+    Eigen::Affine3f trans(t);
+    Eigen::Affine3f rot(r);
 
     // transform centroid
     {
-        Eigen::Vector3d c = t * Eigen::Vector3d(obs_in.centroid.x,
-                                                obs_in.centroid.y,
-                                                obs_in.centroid.z);
-        obs_out.centroid.x = c.x();
-        obs_out.centroid.y = c.y();
-        obs_out.centroid.z = c.z();
+        Eigen::Vector3f c = trans * rot * Eigen::Vector3f(obs_in.centroid_pose.pose.position.x,
+                                                          obs_in.centroid_pose.pose.position.y,
+                                                          obs_in.centroid_pose.pose.position.z);
+        obs_out.centroid_pose.pose.position.x = c.x();
+        obs_out.centroid_pose.pose.position.y = c.y();
+        obs_out.centroid_pose.pose.position.z = c.z();
     }
 
     // transform polygon points
     for(auto pt: obs_in.polygon.points)
     {
-        Eigen::Vector3d p = t * Eigen::Vector3d(pt.x, pt.y, pt.z);
+        Eigen::Vector3f p = trans * rot * Eigen::Vector3f(pt.x, pt.y, pt.z);
         geometry_msgs::Point32 p_out;
         p_out.x = p.x();
         p_out.y = p.y();
@@ -72,14 +72,14 @@ void doTransform(const drive_ros_msgs::Obstacle &obs_in, drive_ros_msgs::Obstacl
 
     // transform orientation
     {
-        Eigen::Quaternion<double> orientation = r * Eigen::Quaternion<double>(obs_in.orientation.w,
-                                                                              obs_in.orientation.x,
-                                                                              obs_in.orientation.y,
-                                                                              obs_in.orientation.z) * r.inverse();
-        obs_out.orientation.w = orientation.w();
-        obs_out.orientation.x = orientation.x();
-        obs_out.orientation.y = orientation.y();
-        obs_out.orientation.z = orientation.z();
+        Eigen::Quaternion<float> orientation = r * Eigen::Quaternion<float>(obs_in.centroid_pose.pose.orientation.w,
+                                                                            obs_in.centroid_pose.pose.orientation.x,
+                                                                            obs_in.centroid_pose.pose.orientation.y,
+                                                                            obs_in.centroid_pose.pose.orientation.z) * r.inverse();
+        obs_out.centroid_pose.pose.orientation.w = orientation.w();
+        obs_out.centroid_pose.pose.orientation.x = orientation.x();
+        obs_out.centroid_pose.pose.orientation.y = orientation.y();
+        obs_out.centroid_pose.pose.orientation.z = orientation.z();
     }
 
     // save all other values
@@ -91,6 +91,9 @@ void doTransform(const drive_ros_msgs::Obstacle &obs_in, drive_ros_msgs::Obstacl
     obs_out.height = obs_in.height;
     obs_out.width  = obs_in.width;
     obs_out.length = obs_in.length;
+
+
+    // TODO TRANSFORM COVARIANCES AND TWIST!
 }
 
 
