@@ -7,6 +7,7 @@ find_package(catkin REQUIRED COMPONENTS
     geometry_msgs
     message_generation
     message_filters
+    tf2_geometry_msgs
 )
 
 include_directories(
