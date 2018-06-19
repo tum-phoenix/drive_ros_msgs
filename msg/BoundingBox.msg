@@ -1,7 +1,7 @@
 Header header
 
 float64 confidence
-uint16 classID
+string label
 
 # bounding box in pixel coordinates (OpenCV coordinate conventions)
 # (x1,y1) top left
