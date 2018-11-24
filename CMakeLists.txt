@@ -26,6 +26,7 @@ add_message_files(
     VehicleEncoder.msg
     BoundingBox.msg
     BoundingBoxArray.msg
+    simple_trajectory.msg
 
     mav_RAW_DATA.msg
     mav_cc16_NOTIFICATION.msg
