@@ -27,6 +27,7 @@ add_message_files(
     BoundingBox.msg
     BoundingBoxArray.msg
     simple_trajectory.msg
+    DrivingLine.msg
 
     mav_RAW_DATA.msg
     mav_cc16_NOTIFICATION.msg
