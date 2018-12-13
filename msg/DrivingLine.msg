@@ -5,4 +5,4 @@ float32 detectionRange
 
 # The polynom describing the driving lane
 uint8 polynom_order
-float32[] polynom_params # has polynom_order elements
+float32[] polynom_params # has polynom_order + 1 elements
