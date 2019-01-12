@@ -24,6 +24,10 @@ add_message_files(
     TimeCompare.msg
     EncoderLinear.msg
     EnvironmentModel.msg
+    ObstacleEnvironment.msg
+    PedestrianEnvironment.msg
+    TrafficMarkEnvironment.msg
+    Lane.msg
     TrajectoryMetaInput.msg
     VehicleEncoder.msg
     BoundingBox.msg
