@@ -23,6 +23,7 @@ add_message_files(
     ObstacleArray.msg
     TimeCompare.msg
     EncoderLinear.msg
+    EnvironmentModel.msg
     VehicleEncoder.msg
     BoundingBox.msg
     BoundingBoxArray.msg
