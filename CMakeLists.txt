@@ -24,6 +24,7 @@ add_message_files(
     TimeCompare.msg
     EncoderLinear.msg
     EnvironmentModel.msg
+    TrajectoryMetaInput.msg
     VehicleEncoder.msg
     BoundingBox.msg
     BoundingBoxArray.msg
