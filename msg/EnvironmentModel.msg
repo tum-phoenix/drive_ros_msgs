@@ -12,27 +12,16 @@
 #   |   |    /
 #   |       /
 #   |   |   |
-int32 current_lane
+int8 LEFT=0
+int8 RIGHT=1
+int8 UNDEFINED=2
+int8 current_lane
 
-#Left=0, Right=1, Left side=2, Right side=3
-#Visually:
-#   |   |   |
-#   |       |
-#   |   |   |
-#   |       |
-# 2 | 0 | 1 | 3
-#   |       |
-#   |   |   |
-#   |       |
-#   |   |   |
-int32[] obj_lane
-float32[] obj_track_distance
-float32[] obj_lateral_offset #positive=obj is on the right
+drive_ros_msgs/ObstacleEnvironment[] obstacles
 
 #Uses the same mapping as objects
-int32[] pedestrian_lane
+drive_ros_msgs/PedestrianEnvironment[] pedestrians
 
-int32[] traffic_marks_id
-float32[] traffic_marks_track_distance
+drive_ros_msgs/TrafficMarkEnvironment[] traffic_marks
 
 #missing: parking spots

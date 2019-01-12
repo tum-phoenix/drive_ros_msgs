@@ -1,6 +1,5 @@
 #actual speed may be lower due to track curves or so, but never higher!
 float32 max_speed
-
 uint8 STANDARD=0
 uint8 SWITCH_LEFT=1
 uint8 SWITCH_RIGHT=2
