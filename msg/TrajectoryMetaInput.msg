@@ -6,4 +6,6 @@ uint8 SWITCH_RIGHT=2
 uint8 TURN_LEFT=3
 uint8 TURN_RIGHT=4
 uint8 STRAIGHT_FORWARD=5
+uint8 PARKING=6
+uint8 PARKING_REVERSE=7
 uint8 control_metadata
