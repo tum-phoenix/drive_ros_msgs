@@ -7,7 +7,7 @@ Header header
 ###############################################################
 
 # The position in rear_axis_middle_ground (z is always 0)
-geometry_msgs/Point[] positions
+geometry_msgs/PointStamped[] positions
 
 # The confidence which is greater 0.0, but has no upper limit
 float32[] confidences
