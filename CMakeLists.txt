@@ -34,6 +34,7 @@ add_message_files(
     BoundingBoxArray.msg
     simple_trajectory.msg
     DrivingLine.msg
+    DetectedIntersection.msg
 
     mav_RAW_DATA.msg
     mav_cc16_NOTIFICATION.msg
