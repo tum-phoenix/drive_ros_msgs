@@ -36,6 +36,7 @@ add_message_files(
     DrivingLine.msg
     DetectedIntersection.msg
     StreetMarking.msg
+    StreetMarkingArray.msg
 
     mav_RAW_DATA.msg
     mav_cc16_NOTIFICATION.msg
