@@ -17,6 +17,8 @@ int8 RIGHT=1
 int8 UNDEFINED=2
 int8 current_lane
 
+float32 front_distance
+
 drive_ros_msgs/ObstacleEnvironment[] obstacles
 
 #Uses the same mapping as objects
