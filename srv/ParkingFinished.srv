@@ -1,0 +1,5 @@
+# Empty request
+---
+bool PARKING=1
+bool NOT_PARKING=0
+bool parking_in_progress

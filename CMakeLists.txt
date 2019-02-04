@@ -67,6 +67,11 @@ add_message_files(
     mav_cc16_COMMAND.msg
 )
 
+add_service_files(
+  FILES
+  ParkingFinished.srv
+)
+
 generate_messages(
     DEPENDENCIES
     std_msgs
