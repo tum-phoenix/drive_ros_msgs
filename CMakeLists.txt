@@ -69,7 +69,7 @@ add_message_files(
 
 add_service_files(
   FILES
-  ParkingFinished.srv
+  ParkingInProgress.srv
 )
 
 generate_messages(
