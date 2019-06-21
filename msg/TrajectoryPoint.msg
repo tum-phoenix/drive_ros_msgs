@@ -1,2 +1,2 @@
-geometry_msgs/Pose pose
-geometry_msgs/Twist twist
+geometry_msgs/Pose2D pose
+nav_2d_msgs/Twist2D twist
