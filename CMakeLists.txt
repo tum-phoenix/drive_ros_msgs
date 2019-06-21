@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
     message_generation
     message_filters
     tf2_geometry_msgs
+    nav_2d_msgs
 )
 
 include_directories(
@@ -78,6 +79,7 @@ generate_messages(
     DEPENDENCIES
     std_msgs
     geometry_msgs
+    nav_2d_msgs
 )
 
 
