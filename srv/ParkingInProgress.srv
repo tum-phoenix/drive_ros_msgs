@@ -1,4 +1,5 @@
 # Empty request
+bool parking_expected
 ---
 bool PARKING=1
 bool NOT_PARKING=0
