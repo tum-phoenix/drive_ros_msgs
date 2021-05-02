@@ -1,1 +1,3 @@
-drive_ros_msgs/BoundingBox[] boxes
+Header header
+Header image_header
+BoundingBox[] bounding_boxes

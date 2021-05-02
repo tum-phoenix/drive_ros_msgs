@@ -33,7 +33,7 @@ add_message_files(
     TrajectoryMetaInput.msg
     VehicleEncoder.msg
     BoundingBox.msg
-    BoundingBoxArray.msg
+    BoundingBoxes.msg
     simple_trajectory.msg
     DrivingLine.msg
     DetectedIntersection.msg
