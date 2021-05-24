@@ -7,4 +7,4 @@ uint8 LEFT=1
 uint8 MIDDLE=2
 uint8 RIGHT = 3
 
-uint8 lineType
+uint8 line_type

@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 # possible obstacle types
 uint8 TYPE_GENERIC = 0

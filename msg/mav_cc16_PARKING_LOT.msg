@@ -1,7 +1,7 @@
 # Automatically Generated in 2017-06-12 22:33:47.453020
 # MESSAGE: PARKING_LOT
 # Description:Parking Lot Sensor
-Header header
+std_msgs/Header header
 
 uint8 ID = 150
 uint8 sysid

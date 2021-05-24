@@ -1,7 +1,7 @@
 # Automatically Generated in 2017-06-12 22:33:47.452851
 # MESSAGE: IMU
 # Description: Measurement of 9DOF Inertial Measurement Unit (IMU)
-Header header
+std_msgs/Header header
 
 uint8 ID = 128
 uint8 sysid

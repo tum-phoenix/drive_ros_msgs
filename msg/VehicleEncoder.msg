@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 # array of encoders
 EncoderLinear[4] encoder

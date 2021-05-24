@@ -1,6 +1,5 @@
 # Debug Message
-Header header
-
-time time_1
-time time_2
-duration diff_time
+std_msgs/Header header
+builtin_interfaces/Time time_1
+builtin_interfaces/Time time_2
+builtin_interfaces/Duration diff_time

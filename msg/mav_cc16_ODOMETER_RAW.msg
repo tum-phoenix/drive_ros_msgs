@@ -1,7 +1,7 @@
 # Automatically Generated in 2017-06-12 22:33:47.452899
 # MESSAGE: ODOMETER_RAW
 # Description:Measurement of Odometry Sensor (raw ticks)
-Header header
+std_msgs/Header header
 
 uint8 ID = 137
 uint8 sysid

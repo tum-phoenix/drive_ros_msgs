@@ -1,7 +1,7 @@
 # Automatically Generated in 2017-06-12 22:33:47.452630
 # MESSAGE: NOTIFICATION
 # Description:Sends a notification to the app
-Header header
+std_msgs/Header header
 
 uint8 ID = 0
 uint8 sysid

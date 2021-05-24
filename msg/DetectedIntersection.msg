@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 ###############################################################
 # Usually we should only detect one intersection, but we still send all, if we detect more.

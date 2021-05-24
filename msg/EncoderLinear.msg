@@ -1,5 +1,5 @@
 # linear encoder message
-Header header
+std_msgs/Header header
 
 # absolut position of encoder in [m]
 float32 pos_abs

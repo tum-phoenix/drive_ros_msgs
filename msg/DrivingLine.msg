@@ -1,7 +1,7 @@
-Header header
+std_msgs/Header header
 
 # x range of the current detected lane
-float32 detectionRange
+float32 detection_range
 
 # The polynom describing the driving lane
 uint8 polynom_order
